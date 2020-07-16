@@ -23,7 +23,7 @@ html{
 /* Header section*/
 /**************************/
 header{
-    background-image:linear-gradient(rgba(0, 102, 153, 0.4),rgba(0, 102, 153, 0.4)),url(../img/Water-Drop-2.jpeg);
+    background-image:linear-gradient(rgba(0, 102, 153, 0.4),rgba(0, 102, 153, 0.4)),url(../img/Water-Drop-3.png);
     height:70rem;
     background-size:cover;
     background-position:left;
