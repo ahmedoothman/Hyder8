@@ -39,8 +39,8 @@ header{
     padding: .5rem;
 }
 .top nav .logo{
-    width:50px;
-    height:50px;
+    width:80px;
+    height:80px;
     float: left;
     display: inline-block
 }
@@ -52,7 +52,7 @@ header{
     display: inline-block;
     float:right;
     font-size: 1.5rem;
-    margin-top:1.2rem;
+    margin-top:2.2rem;
 
 }
 .top nav .bar ul{
@@ -60,9 +60,8 @@ header{
 }
 .top nav .bar ul li{
     float: left;
-    padding: .4rem 1.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
+    padding: .6rem 1.5rem;
+    font-weight: 700;
     cursor: pointer;
 }
   .top nav .bar li:last-child{
@@ -73,7 +72,7 @@ header{
     color: Black;
 }
 .sticky{
-      background: rgba(7, 123, 165, 0.78);
+      background: rgba(7, 123, 165, 1);
     position: fixed;
     width:100%;
     z-index: 9990;
@@ -110,8 +109,7 @@ header{
 .sticky nav .bar ul li{
     float: left;
     padding: 1rem 1.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
 }
 .sticky nav .bar ul li a{
@@ -498,7 +496,7 @@ td{
 /* footer */
 /******************/
 footer{
-    background: #313131;
+    background: #222222;
     color:white;
     font-size: 1.5rem;
 }
@@ -517,8 +515,8 @@ footer .col{
     text-align: center;
 }
 .logof{
-    width:8rem;
-    height: 8rem;
+    width:9rem;
+    height: 9rem;
     display: block;
     margin: 5rem auto;
     margin-bottom: 8rem;
