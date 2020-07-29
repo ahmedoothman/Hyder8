@@ -378,14 +378,14 @@ header{
     padding-bottom: 5rem;
 }
 .treat h1{
-     text-align: center;
+    text-align: center;
     font-size:3rem;
     letter-spacing: .7rem;
     margin-bottom:5rem;
     font-weight: 700;
     color:#056483;
     text-transform: uppercase;
-    padding-top: 9rem;
+    padding-top: 0rem;
 }
 .heading{
     width:100%;
@@ -401,6 +401,9 @@ header{
     font-weight:700;
     display: inline-block;
     cursor: pointer;
+    width: 16.44%;
+    text-align: center;
+
 }
 .head-btn:first-child{
     border-top-left-radius: 1rem;
@@ -429,10 +432,13 @@ header{
     margin-top:-1rem;
     font-weight:600;
     color:#606566;
-    height:40rem;
+    height:50rem;
     display: none;
 }
-
+.impo{
+  font-weight: bold;
+  font-size: 2.1rem;
+}
 .content:first-child{
     visibility: visible;
     opacity:1;
