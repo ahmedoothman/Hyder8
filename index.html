@@ -16,7 +16,7 @@
    crossorigin=""></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Grid.css">
 
@@ -24,8 +24,13 @@
   </head>
   <body>
     <header>
+      <div class="back">
+        <img src="img/redesign-header.png" alt="" class="desk-re">
+        <img src="img/redesign-mob.png" alt="" class="mob-re">
+      </div>
+
         <div class="top">
-          <div class="row">
+          <div class="row1">
            <nav class="clearfix">
 
             <div class="logo"><img src="img/hyder-logo.png" alt=""></div>
@@ -36,7 +41,7 @@
                   <li><a href="benefits.html">BENEFITS</a></li>
                   <li><a href="faqs.html">FAQs</a></li>
                   <li><a href="treat.html">TREATMENT</a></li>
-                  <li><a href="index.html#contact">CONTACT US</a></li>
+                  <li><a href="index.html#contact" id="special" >CONTACT US</a></li>
                     <li><a href="#mobn"><lable for="togg"><i class="fas fa-bars" ></i></lable></a><input type="checkbox"id="togg"/></li>
 
                 </ul>
@@ -68,18 +73,20 @@
     <section class="about" id="about">
         <div class="row about-back">
             <div class="col span-1-of-2">
-                <div class="top-p">
+                <div class="top-p" data-aos="fade-right">
                     <h2>Why is HYDR8 IV therapy different than drinking water?</h2>
+                    <br>
                     <p>We all love water, but it lacks electrolytes. And water still has to be absorbed in the digestive tract so it takes time for your body to properly restore its fluid balance. Not only is IV therapy the quickest way to restore fluid loss, it also helps to replenish vital nutrients.
 </p>
                 </div>
-                <div class="bottom-p">
+                <div class="bottom-p" data-aos="fade-left">
                     <h2>Why is HYDR8 IV therapy beneficial to me? </h2>
+                    <br>
                     <p>It’s the most effective way to elevate vitamin levels in the blood and rehydrate the system, while at the same time bypassing the gastrointestinal tract. Vitamins are then available for immediate use at a much higher concentration, and are deposited directly into the cell.
 </p>
                 </div>
             </div>
-            <div class="col span-1-of-2 img-fix img-mob">
+            <div class="col span-1-of-2 img-fix img-mob" data-aos="zoom-in-left">
                 <img src="img/Iv%20Drip%202.jpeg" alt="">
             </div>
         </div>
@@ -89,36 +96,53 @@
     <section class="disclaimer" id="disclaimer">
        <h1>Disclaimers</h1>
         <div class="row">
-            <div class="disc">If pregnant, normal saline fluids are commonly an option for infusion. For any additional vitamins or minerals, a written prescription from your physician is required.
+            <div class="disc" data-aos="fade-right">If pregnant, normal saline fluids are commonly an option for infusion. For any additional vitamins or minerals, a written prescription from your physician is required.
             </div>
-            <div class="disc">IV drips come standard in either a 500ml IV bag or a 1000ml (1L) IV bag. These IV drips are not meant to diagnose or treat medical conditions. The IVs, Boosters & Shots are administered by a Registered Nurse and overseen by a Medical Director. Contact us for more information on how to customize your IV drip</div>
-            <div class="disc">HYDR8 is not a medical treatment center and therefore we do not treat or diagnosis health issues.</div>
-            <div class="disc">Must be 18 years or older to receive our IV drip services.</div>
-            <div class="disc">HYDR8 reserves the right to refuse service to any person for any reason, and is under no obligation to treat any person who seeks our services.</div>
-            <div class="disc">Any person who is determined to be under the influence of prescription/illegal drugs or intoxicated will not be serviced.</div>
+            <div class="disc" data-aos="fade-left">IV drips come standard in either a 500ml IV bag or a 1000ml (1L) IV bag. These IV drips are not meant to diagnose or treat medical conditions. The IVs, Boosters & Shots are administered by a Registered Nurse and overseen by a Medical Director. Contact us for more information on how to customize your IV drip</div>
+            <div class="disc" data-aos="fade-right">HYDR8 is not a medical treatment center and therefore we do not treat or diagnosis health issues.</div>
+            <div class="disc" data-aos="fade-left">Must be 18 years or older to receive our IV drip services.</div>
+            <div class="disc" data-aos="fade-right">HYDR8 reserves the right to refuse service to any person for any reason, and is under no obligation to treat any person who seeks our services.</div>
+            <div class="disc" data-aos="fade-left">Any person who is determined to be under the influence of prescription/illegal drugs or intoxicated will not be serviced.</div>
         </div>
     </section>
 
 
       <section class="promo" id="promo">
-          <div class="row">
-              <div class="col span-1-of-1">
-                 <div class="promo-img">
-                  <img src="img/PROMOTION-SPECIALS.png" alt="">
-                  </div>
-              </div>
+          <div class="row-pro clearfix box" data-aos="zoom-in-up"  data-aos-duration="1000">
+                   <div class="img">
+                     <img src="./img/IV-DRIP-FULL.jpeg" alt="">
+                   </div>
+                   <div class="content-pro">
+                     <div class="line l-1">
+                        <h1>Promotion specials</h1> <img src="img/megaphone.png" alt="">
+                        <hr>
+                     </div>
+                     <div class="line l-2">
+                        <h3>Get your 8th drip 25% off</h3>
+                        <hr>
+                     </div>
+                     <div class="line l-3">
+
+                        <h3>Add 2 mixers to our REHYDER8 bag Refer a friend and receive 15% off your next IV Drip Weekly Specials </h3>
+                        <hr>
+                     </div>
+                     <div class="line l-4">
+
+                        <h3>Happy Hour Tuesday from 2pm-5pm </h3>
+                     </div>
+                   </div>
           </div>
       </section>
 
        <section class="contact" id="contact">
                     <div class="col span-1-of-3 up clearfix">
                 <table>
-                    <tr>
+                    <!-- <tr>
                     <td><a href="#"><i class="fab fa-facebook"></i>https://www.facebook.com/hyder8</a></td>
                     </tr>
                     <tr>
                     <td><a href="#"><i class="fab fa-twitter"></i>https://twitter.com/hyder8</a></td>
-                    </tr>
+                    </tr> -->
                     <tr>
                     <td><a href="#"><i class="fas fa-envelope"></i>hyder8@gmail.com</a></td>
                     </tr>
@@ -129,23 +153,17 @@
                     <td><a href="https://goo.gl/maps/QxEWATbxHXSk7tv56" blank><i class="fas fa-map-marked-alt"></i>114 Vision Park Blvd Shenandoah, TX 77384</a></td>
                     </tr>
                 </table>
+                <div class="logof-e" data-aos="zoom-out"  data-aos-duration="400">
+                    <img src="img/hyder-logo.png" alt="">
+
+                </div>
             </div>
             <div id="mapid"></div>
 
        </section>
 
        <footer>
-           <div class="row">
-               <div class="logof">
-                   <img src="img/hyder-logo.png" alt="">
-               </div>
-           </div>
-              <div class="row">
-               <div class="col span-1-of-1">
-                  <hr>
-                   <a>Copyright ©2020 All rights reserved   |  HYDR8</a>
-               </div>
-           </div>
+         <h1>Copyright ©2020 All rights reserved | HYDR8</h1>
        </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -157,7 +175,13 @@
      <script src="js/jquery.waypoints.min.js"></script>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
          <script>
+         AOS.init({
+               // offset: 400, // offset (in px) from the original trigger point
+               delay:0, // values from 0 to 3000, with step 50ms
+               duration: 1500 // values from 0 to 3000, with step 50ms
+             });
              var lat=30.190631;
              var lan=-95.459232;
             var mymap = L.map('mapid').setView([lat, lan], 18.2);

@@ -18,11 +18,12 @@
        <link rel="stylesheet" href="css/normalize.css">
        <link rel="stylesheet" href="css/style.css">
        <link rel="stylesheet" href="css/Grid.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
     <div>
-        <div class="sticky">
+        <div class="sticky-n">
           <div class="row">
            <nav class="clearfix">
 
@@ -56,29 +57,45 @@
                 </ul>
         </div>
     </div>
+    <section class="top-main">
+      <div class="row-main">
+        <div class="l-t clearfix">
+          <div class="l-t-fix">
+          <div class="logo-t">
+            <img src="img/hyder-logo.png" alt="" data-aos="zoom-out"  data-aos-duration="700">
+          </div>
+          <div class="title-t">
+              <h1 data-aos="fade-down"  data-aos-duration="700">Benefits</h1>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
     <section class="benefits" id="benefits">
-        <h1>BENEFITS</h1>
+        <!-- <h1>BENEFITS</h1> -->
         <div class="row">
             <div class="col span-1-of-1 fix">
                <div class="raw">
-                <div class="benefit-view right">
+                <div class="benefit-view right" data-aos="fade-down-right"  data-aos-duration="900">
                     <li>Boost the immune system</li>
                     <li>Reduce fatigue</li>
                     <li>Reduce migraines</li>
                 </div>
-                <div class="benefit-view left">
+                <div class="benefit-view left" data-aos="fade-down-left"  data-aos-duration="1100">
                     <li>Treat chronic conditions</li>
                     <li>Help with Nausea</li>
                     <li>Ease inflammation</li>
                 </div>
                 </div>
                 <div class="raw">
-                <div class="benefit-view right">
+                <div class="benefit-view right" data-aos="fade-up-right"  data-aos-duration="1300">
                     <li>Resolve digestion issues</li>
                     <li>Combat chronic exhaustion</li>
                     <li>Muscle aches</li>
                  </div>
-                <div class="benefit-view left">
+                <div class="benefit-view left" data-aos="fade-up-left"  data-aos-duration="1500">
                     <li>Energize your body</li>
                     <li>Fight infection</li>
                     <li>Boost b12 levels</li>
@@ -90,28 +107,24 @@
         </div>
     </section>
 
-    <footer>
-        <div class="row">
-            <div class="logof">
-                <img src="img/hyder-logo.png" alt="">
-            </div>
-        </div>
-           <div class="row">
-            <div class="col span-1-of-1">
-               <hr>
-                <a>Copyright ©2020 All rights reserved   |  HYDR8</a>
-            </div>
-        </div>
-    </footer>
+
+           <footer>
+             <h1>Copyright ©2020 All rights reserved | HYDR8</h1>
+           </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
      <script src="js/jquery.waypoints.min.js"></script>
-
-    <script src="js/script.js"></script>
-         <script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script src="js/script.js"></script>
+          <script>
+          AOS.init({
+                // offset: 400, // offset (in px) from the original trigger point
+                delay:0, // values from 0 to 3000, with step 50ms
+                duration: 1500 // values from 0 to 3000, with step 50ms
+              });
              var lat=30.190631;
              var lan=-95.459232;
             var mymap = L.map('mapid').setView([lat, lan], 18.2);

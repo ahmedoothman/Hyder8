@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-      <title>Disclaimers</title>
+      <title>Treatment</title>
    <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,11 +18,13 @@
        <link rel="stylesheet" href="css/normalize.css">
        <link rel="stylesheet" href="css/style.css">
        <link rel="stylesheet" href="css/Grid.css">
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
 
   <body>
     <div>
-        <div class="sticky">
+        <div class="sticky-n">
           <div class="row">
            <nav class="clearfix">
 
@@ -56,18 +58,31 @@
                 </ul>
         </div>
     </div>
-    <br>
-    <br>
+    <section class="top-main">
+      <div class="row-main">
+        <div class="l-t clearfix">
+          <div class="l-t-fix">
+          <div class="logo-t">
+            <img src="img/hyder-logo.png" alt="" data-aos="zoom-out"  data-aos-duration="700">
+          </div>
+          <div class="title-t">
+              <h1 data-aos="fade-down"  data-aos-duration="700">Treatment</h1>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
     <section class="treat" id="treat">
-       <h1>Treatment</h1>
+       <!-- <h1>Treatment</h1> -->
         <div class="row">
             <div class="heading">
-                <p onclick="showq1()" class="head-btn " id="a1">REHYDR8</p>
-                <p onclick="showq2()" class="head-btn " id="a2">INVIGOR8</p>
-                <p onclick="showq3()" class="head-btn " id="a3">ALLEVI8</p>
-                <p onclick="showq4()" class="head-btn " id="a4">ELEV8</p>
-                <p onclick="showq5()" class="head-btn " id="a5">REJUVEN8</p>
-                <p onclick="showq6()" class="head-btn " id="a6">ACCELER8  </p>
+                <p onclick="showq1()" class="head-btn " id="a1" data-aos="fade-down-right"  data-aos-duration="1100">REHYDR8</p>
+                <p onclick="showq2()" class="head-btn " id="a2" data-aos="fade-down-right"  data-aos-duration="1300">INVIGOR8</p>
+                <p onclick="showq3()" class="head-btn " id="a3" data-aos="fade-down-right"  data-aos-duration="1500">ALLEVI8</p>
+                <p onclick="showq4()" class="head-btn " id="a4" data-aos="fade-down-left"  data-aos-duration="1500">ELEV8</p>
+                <p onclick="showq5()" class="head-btn " id="a5" data-aos="fade-down-left"  data-aos-duration="1300">REJUVEN8</p>
+                <p onclick="showq6()" class="head-btn " id="a6" data-aos="fade-down-left"  data-aos-duration="1100">ACCELER8  </p>
             </div>
             <div class="heading-content">
                 <div class="content" id="c1" onclick="showq1()">
@@ -205,19 +220,10 @@
         </div>
     </section>
 
-    <footer>
-        <div class="row">
-            <div class="logof">
-                <img src="img/hyder-logo.png" alt="">
-            </div>
-        </div>
-           <div class="row">
-            <div class="col span-1-of-1">
-               <hr>
-                <a>Copyright ©2020 All rights reserved   |  HYDR8</a>
-            </div>
-        </div>
-    </footer>
+
+           <footer>
+             <h1>Copyright ©2020 All rights reserved | HYDR8</h1>
+           </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -225,9 +231,14 @@
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
      <script src="js/jquery.waypoints.min.js"></script>
-
-    <script src="js/script.js"></script>
-         <script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script src="js/script.js"></script>
+          <script>
+          AOS.init({
+                // offset: 400, // offset (in px) from the original trigger point
+                delay:0, // values from 0 to 3000, with step 50ms
+                duration: 1500 // values from 0 to 3000, with step 50ms
+              });
              var lat=30.190631;
              var lan=-95.459232;
             var mymap = L.map('mapid').setView([lat, lan], 18.2);
