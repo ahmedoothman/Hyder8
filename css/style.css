@@ -67,8 +67,8 @@ header{
 
 }
 .top nav .logo{
-    width: 370px;
-    height: 175px;
+    width: 180px;
+    height: 80px;
     float: left;
     display: inline-block;
 
@@ -1045,12 +1045,12 @@ header{
         display: none;
     }
      .top nav .bar li:last-child{
-        display:block;
+        display:inline;
          cursor: pointer;
-         margin-top: 30px;
+         margin-top: 0px;
     }
       .top nav .bar li a i:last-child{
-        display:block;
+        display:inline;
          cursor: pointer;
           font-size:2.2rem;
           color: #004867;
@@ -1060,10 +1060,11 @@ header{
     .top nav .logo{
         /* width: 330px;
         height: 135px; */
-        width: 310px;
-       height: 130px;
+        width: 120px;
+       height: 50px;
         float: left;
         display: inline-block;
+        margin-top:15px;
 
     }
     .sticky nav .bar li:last-child{
@@ -1081,14 +1082,14 @@ header{
 
       }
        .sticky nav .bar li:last-child{
-          display:block;
+          display:inline;
            cursor: pointer;
            margin-top:0px;
       }
         .sticky nav .bar li a i:last-child{
-          display:block;
+          display:inline;
            cursor: pointer;
-            font-size:2.2rem;
+            font-size:2rem;
             color: #004867;
       }
     .sticky nav .bar li a i:last-child{
